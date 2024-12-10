@@ -4,6 +4,7 @@ import numpy as np
 
 
 def return_antinodes(a_x, a_y, b_x, b_y, max_dim):
+    # returning values for part 1 solution
     result = []
 
     n1_x = 2 * a_x - b_x
@@ -21,16 +22,7 @@ def return_antinodes(a_x, a_y, b_x, b_y, max_dim):
 
 
 def return_more_antinodes(a_x, a_y, b_x, b_y, max_dim):
-    """
-    neg <--- a  b ---> pos
-
-    :param a_x:
-    :param a_y:
-    :param b_x:
-    :param b_y:
-    :param max_dim:
-    :return:
-    """
+    # returning values for part 2 solution
     result = []
 
     in_positive = True

@@ -7,7 +7,6 @@ def looped(loc_x, loc_y, direction, data_map, iteration):
         steps += 1
 
         if str(direction) in data_map[loc_y][loc_x]:
-            print(f'TRUE  Iteration: {iteration} Steps: {steps}')
             return True
         else:
             if data_map[loc_y][loc_x] == '.' or \
@@ -24,7 +23,6 @@ def looped(loc_x, loc_y, direction, data_map, iteration):
 
             if (loc_y_next == 130) or (loc_x_next == 130) or (loc_y_next == -1) or (loc_x_next == -1):
                 # exit!
-                print(f'FALSE Iteration: {iteration} Steps: {steps}')
                 return False
             elif data_map[loc_y_next][loc_x_next] == '#':
                 direction = (direction + 1) % 4
@@ -42,8 +40,6 @@ if __name__ == '__main__':
 
         direction = None
         found_start = False
-        # x is location across, y is down
-        # accessing place: place_map[y][x]
         loc_x = None
         loc_y = None
 

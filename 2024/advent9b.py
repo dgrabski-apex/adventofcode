@@ -39,10 +39,10 @@ if __name__ == '__main__':
                 else:
                     idx -= 1
 
-            found_home = False # have we found a new home for that block of data?
+            found_home = False  # have we found a new home for that block of data?
             block_idx = 0
-            block_needed = search_point[1] # needed blank block size
-            block_id = search_point[0] # which also equals i, oh well
+            block_needed = search_point[1]  # needed blank block size
+            block_id = search_point[0]  # which also equals i, oh well
 
             j = 0
             while j < (len(disk_array) + idx) and not found_home:

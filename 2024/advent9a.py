@@ -36,9 +36,9 @@ if __name__ == '__main__':
                         checksum += idx * current[0]
                         idx += 1
                 else:
-                    # on a gap
+                    # on a gap, will something fit here?
                     gap_size = current[1]
-                    last = disk_array[-1]
+                    last = disk_array[-1] # last entry in the disk array table
                     if last[0] is None:
                         disk_array.pop()
                         last = disk_array[-1]
